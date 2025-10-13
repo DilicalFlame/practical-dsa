@@ -1,0 +1,27 @@
+{
+  "name": "scala",
+  "argv": [
+    "C:\\Users\\Devesh\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\scala\\scala3\\releases\\download\\3.7.3\\scala3-3.7.3-x86_64-pc-win32.zip\\scala3-3.7.3-x86_64-pc-win32\\libexec\\scala-cli.exe",
+    "--cli-default-scala-version",
+    "3.7.3",
+    "--repository",
+    "file:///C:/Users/Devesh/AppData/Local/Coursier/cache/arc/https/github.com/scala/scala3/releases/download/3.7.3/scala3-3.7.3-x86_64-pc-win32.zip/scala3-3.7.3-x86_64-pc-win32/maven2",
+    "--prog-name",
+    "scala",
+    "--skip-cli-updates",
+    "bsp",
+    "--json-options",
+    "D:\\Playground\\practical-dsa\\C01-data-structures\\01-linked-lists\\linear-singly\\scala\\.scala-build\\ide-options-v2.json",
+    "--json-launcher-options",
+    "D:\\Playground\\practical-dsa\\C01-data-structures\\01-linked-lists\\linear-singly\\scala\\.scala-build\\ide-launcher-options.json",
+    "--envs-file",
+    "D:\\Playground\\practical-dsa\\C01-data-structures\\01-linked-lists\\linear-singly\\scala\\.scala-build\\ide-envs.json",
+    "D:\\Playground\\practical-dsa\\C01-data-structures\\01-linked-lists\\linear-singly\\scala\\LinearSinglyLL.sc"
+  ],
+  "version": "1.9.0",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}

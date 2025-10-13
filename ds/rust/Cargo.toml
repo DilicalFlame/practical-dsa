@@ -1,0 +1,8 @@
+bin = [{ name = "LinearSinglyLL", path = "ds/rust/LinearSinglyLL.rs" }]
+
+[package]
+name = "practical-dsa"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

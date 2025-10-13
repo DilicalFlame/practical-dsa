@@ -3,10 +3,10 @@ project(dsa)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(C01-data-structures)
+include_directories(ds)
 
-# Find all cpp files in C01-data-structures and its subdirectories
-file(GLOB_RECURSE CPP_FILES "C01-data-structures/**/*.cpp")
+# Find all cpp files in ds and its subdirectories
+file(GLOB_RECURSE CPP_FILES "ds/**/*.cpp")
 
 # Create a separate executable for each cpp file
 foreach(cpp_file ${CPP_FILES})

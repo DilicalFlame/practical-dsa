@@ -1,0 +1,4 @@
+{
+  "r.lsp.promptToInstall": false,
+  "python.defaultInterpreterPath": "${workspaceFolder:practical-dsa}/.venv/Scripts/python.exe"
+}
