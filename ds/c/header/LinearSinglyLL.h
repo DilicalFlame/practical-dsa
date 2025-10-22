@@ -1,17 +1,17 @@
 #ifndef LINEAR_SINGLY_LL_H
 #define LINEAR_SINGLY_LL_H
 
-struct Node
+struct LSNode
 {
     int data;
-    struct Node *next;
+    struct LSNode *next;
 };
 
-struct Node *createNode(int val);
-void appendLSNode(struct Node **head_ref, int data);
-void prependLSNode(struct Node **head_ref, int data);
-void removeLSNode(struct Node **head_ref, int key);
-void displayLSLL(struct Node *node);
-void freeLSLL(struct Node *head);
+struct LSNode *createLSNode(int val);
+void appendLSNode(struct LSNode **head_ref, int data);
+void prependLSNode(struct LSNode **head_ref, int data);
+void removeLSNode(struct LSNode **head_ref, int key);
+void displayLSLL(struct LSNode *node);
+void freeLSLL(struct LSNode *head);
 
 #endif // LINEAR_SINGLY_LL_H

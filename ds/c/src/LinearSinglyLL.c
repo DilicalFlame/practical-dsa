@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "../header/LinearSinglyLL.h"
 
-struct Node *createNode(int val)
+struct LSNode *createLSNode(int val)
 {
-    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+    struct LSNode *newNode = (struct LSNode *)malloc(sizeof(struct LSNode));
     if (!newNode)
     {
         perror("Out of RAM.\n");
@@ -15,15 +15,15 @@ struct Node *createNode(int val)
     return newNode;
 }
 
-void appendLSNode(struct Node **head_ref, int data)
+void appendLSNode(struct LSNode **head_ref, int data)
 {
-    struct Node *newNode = createNode(data);
+    struct LSNode *newNode = createLSNode(data);
     if (*head_ref == NULL)
     {
         *head_ref = newNode;
         return;
     }
-    struct Node *last = *head_ref;
+    struct LSNode *last = *head_ref;
     while (last->next != NULL)
     {
         last = last->next;
@@ -31,17 +31,17 @@ void appendLSNode(struct Node **head_ref, int data)
     last->next = newNode;
 }
 
-void prependLSNode(struct Node **head_ref, int data)
+void prependLSNode(struct LSNode **head_ref, int data)
 {
-    struct Node *newNode = createNode(data);
+    struct LSNode *newNode = createLSNode(data);
     newNode->next = *head_ref;
     *head_ref = newNode;
 }
 
 // Function to remove a node with a specific key
-void removeLSNode(struct Node **head_ref, int key)
+void removeLSNode(struct LSNode **head_ref, int key)
 {
-    struct Node *temp = *head_ref, *prev = NULL;
+    struct LSNode *temp = *head_ref, *prev = NULL;
 
     // If the head node itself holds the key
     if (temp != NULL && temp->data == key)
@@ -71,7 +71,7 @@ void removeLSNode(struct Node **head_ref, int key)
 }
 
 // Function to display the linked list
-void displayLSLL(struct Node *node)
+void displayLSLL(struct LSNode *node)
 {
     while (node != NULL)
     {
@@ -81,10 +81,10 @@ void displayLSLL(struct Node *node)
     printf("NULL\n");
 }
 
-void freeLSLL(struct Node *head)
+void freeLSLL(struct LSNode *head)
 {
-    struct Node *current = head;
-    struct Node *next;
+    struct LSNode *current = head;
+    struct LSNode *next;
 
     while (current != NULL)
     {
