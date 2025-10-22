@@ -1,12 +1,10 @@
-cmake_minimum_required(VERSION 4.0)
-project(dsa)
+cmake_minimum_required(VERSION 3.10)
+project(dsa_cpp CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-include_directories(ds)
-
-# Find all cpp files in ds and its subdirectories
-file(GLOB_RECURSE CPP_FILES "ds/**/*.cpp")
+# Find all cpp files in the current directory and its subdirectories
+file(GLOB_RECURSE CPP_FILES "*.cpp")
 
 # Create a separate executable for each cpp file
 foreach(cpp_file ${CPP_FILES})
